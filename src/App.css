@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400');
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color:#D9DCE4;
+}
+
 .App {
   display: flex;
   justify-content: center;
 }
 
 .calculator {
-  margin-top: 30%;
+  margin-top: 200px;
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  
 }
 
 .calculator > * {
@@ -16,6 +24,8 @@
 
 .row {
   grid-column: 1/-1;
+  font-size:1.5rem;
+  color :black; 
 }
 
 #display {
@@ -23,5 +33,39 @@
 }
 
 #clear {
-  text-align: center;
+  text-align: right;
 }
+
+.button {
+  padding: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:center; 
+   flex-flow: row nowrap;
+   justify-content:center; 
+   background: #4C4F61; 
+  }
+
+ .button-operator{
+  padding: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:center; 
+   flex-flow: row nowrap;
+   justify-content:center; 
+  background-color:#F0ECF0;
+ } 
+
+#divide {
+    color: #FF2AEE;
+   }
+#multiply {
+    color:#00A0FF; 
+   }
+#add {
+    color:#27FF10;
+   }
+   
+#subtract {
+   color:#FF4E4A; 
+   }
